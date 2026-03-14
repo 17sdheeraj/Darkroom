@@ -1,6 +1,6 @@
 :root {
     --bg: #222831;
-    --second: #e6e1da;
+    --main: #e6e1da;
 }
 
 
@@ -16,4 +16,11 @@ body {
     width: auto;
     padding: 0;
     position: fixed;
+}
+
+#title {
+    color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
