@@ -7,6 +7,20 @@
 	onMount(() => {
 		show = true;
 	});
+
+	let items = [
+		["https://cdn.hackclub.com/019cf3a4-5c6d-7085-ae8c-b6e7267c1257/instax_crop.png",
+			"Instax", "An Instax camera"],
+		["https://cdn.hackclub.com/019cf3a4-5e21-7fcf-a9e9-cd2ad4f39e76/memory_cards_crop.png", 
+			"Memory cards", "Memory cards to store your photos"],
+		["https://cdn.hackclub.com/019cf3a4-6360-7cfe-abcc-f1248cd352a7/printed_photps_crop.png",
+			"Printed Photos", "A grant to print your photos"],
+		["https://user-cdn.hackclub-assets.com/019cf3ab-4853-70fe-b981-c9e504397c82/kodak_chamera_crop.png",
+			"Kodak Charmera", "Kodak Charmera - A keychain camera"],
+		["", "", "Placeholder"],
+		["", "", "Placeholder"],
+	];
+
 </script>
 
 <a href="https://hackclub.com/">
@@ -22,7 +36,7 @@
 		<h1 id="title">Darkroom</h1>
 
 		<p id="description">
-			Build something photography related<br>
+			Build something photography related,<br>
 			Get cameras, gear, film and other cool stuff!
 		</p>
 	</div>
@@ -38,14 +52,22 @@
 	<div class:visible={show}>
 		<h6 id="get">Get stuff like:</h6>
 		<i id="det-disclaimer">*This is subject to change!</i>
-		
+
 		<div id="polaroid-grid">
-			{#each Array(8) as _, i}
-				<img 
-					src="https://cdn.hackclub.com/019cf277-b514-7a8f-96f5-c33a5dc49504/polaroid.svg"
-					alt="Polaroid"
-					class="polaroid"
-				/>
+			{#each items as [url, alt, desc]}
+				<div class="polaroid-wrap">
+					<img
+						src={url}
+						alt={alt}
+						class="polaroid-img"
+					/>
+					<img
+						src="https://cdn.hackclub.com/019cf277-b514-7a8f-96f5-c33a5dc49504/polaroid.svg"
+						alt="Polaroid"
+						class="polaroid"
+					/>
+					<p class="polaroid-text">{desc}</p>
+				</div>
 			{/each}
 		</div>
 	</div>

@@ -88,14 +88,14 @@ body {
 
 #title {
   margin: 0;
-  font-size: clamp(4rem, 10vw, 8.75rem);
+  font-size: clamp(5rem, 11vw, 13rem);
   text-align: left;
   line-height: 0.95;
 }
 
 #description {
   margin-top: 1rem;
-  font-size: clamp(1.25rem, 2.5vw, 2.375rem);
+  font-size: clamp(1.5rem, 2.8vw, 3rem);
   text-align: left;
 }
 
@@ -120,26 +120,59 @@ body {
 
 #get {
   margin-top: -1em;
-  margin-left: 2em;
-  font-size: clamp(2rem, 8vw, 4rem);
+  margin-left: 1.6em;
+  font-size: clamp(3rem, 9vw, 6rem);
   text-align: left;
-  margin-bottom: 0.1em;
+  margin-bottom: 0;
 }
 
 #det-disclaimer {
-  margin-left: 5.5em;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-left: 5em;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   text-align: left;
 }
 
 #polaroid-grid {
   margin-top: 3em;
-  margin-left: 5.5em;
+  margin-left: 7em;
+}
+
+.polaroid-wrap {
+  position: relative;
+  display: inline-block;
+  margin-right: 2em;
 }
 
 .polaroid {
   height: 500px;
-  z-index: 99;
+  z-index: 10;
   margin-bottom: 5em;
   filter: brightness(90%);
+  display: block;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.polaroid-img {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.polaroid-text {
+  position: absolute;
+  top: 71%;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 75%;
+
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  text-align: left;
+  font-family: "Courier New";
+  font-weight: bold;
+  color: var(--bg);
+  filter: blur(0.4px);
+
+  margin: 0;
+  z-index: 11;
 }
