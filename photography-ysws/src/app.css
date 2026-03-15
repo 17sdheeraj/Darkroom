@@ -55,6 +55,19 @@ body {
   flex-direction: column;
 }
 
+#main,
+#dark > div {
+	opacity: 0;
+	filter: blur(10px);
+	transition: opacity 1.5s ease, filter 1.5s ease;
+}
+
+#main.visible,
+#dark > div.visible {
+	opacity: 1;
+	filter: blur(0);
+}
+
 #flag {
   position: fixed;
   top: 1.25rem;
@@ -67,7 +80,7 @@ body {
 #main {
   display: flex;
   justify-content: center;
-  margin-top: 16rem;
+  margin-top: 14rem;
 }
 
 #hero {
@@ -88,7 +101,7 @@ body {
 }
 
 #wave {
-  margin-top: 5rem;
+  margin-top: 8rem;
   filter: brightness(115%);
 
   user-select: none;
@@ -111,10 +124,17 @@ body {
   margin-left: 2em;
   font-size: clamp(2rem, 8vw, 4rem);
   text-align: left;
+  margin-bottom: 0.1em;
+}
+
+#det-disclaimer {
+  margin-left: 5.5em;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: left;
 }
 
 #polaroid-grid {
-  margin-top: -6em;
+  margin-top: 3em;
   margin-left: 5.5em;
 }
 
@@ -122,4 +142,5 @@ body {
   height: 500px;
   z-index: 99;
   margin-bottom: 5em;
+  filter: brightness(90%);
 }
