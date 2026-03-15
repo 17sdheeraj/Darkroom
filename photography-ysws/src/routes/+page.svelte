@@ -13,7 +13,7 @@
 
 <a href="https://hackclub.com/">
 	<img
-		src="/images/flag-orpheus-left-color-fix.svg"
+		src="https://cdn.hackclub.com/019cf26c-c031-7bb9-a8c4-216a5ecd5a28/flag-orpheus-left-color-fix.svg"
 		alt="Hack Club"
 		id="flag"
 	/>
