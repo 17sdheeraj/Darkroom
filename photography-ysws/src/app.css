@@ -88,7 +88,7 @@ body {
 }
 
 #faq-button {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: bold;
   text-decoration: none;
   padding: 0.1em;
@@ -97,36 +97,57 @@ body {
 #main {
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding: 0 1.5rem;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 0 1.5rem;
 }
 
 #hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+#hero-copy {
   display: inline-block;
+  max-width: 100%;
+  text-align: left;
 }
 
 #title {
   margin: 0;
-  font-size: clamp(5rem, 11vw, 13rem);
-  text-align: center;
+  font-size: clamp(4.5rem, 10vw, 12rem);
   line-height: 0.95;
 }
 
 #description {
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-  font-size: clamp(1.5rem, 2.8vw, 3rem);
-  text-align: left;
+  margin: 1rem 0 0 0;
+  font-size: clamp(1.35rem, 2.5vw, 2.7rem);
+  line-height: 1.15;
+  max-width: min(38ch, calc(100vw - 3rem));
+  text-wrap: pretty;
 }
 
 #buttons {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .button {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: bold;
   text-decoration: none;
 
@@ -141,7 +162,7 @@ body {
 }
 
 #wave {
-  margin-top: 8rem;
+  margin-top: 5.5rem;
   filter: brightness(115%);
 
   user-select: none;
@@ -161,21 +182,21 @@ body {
 
 #get {
   margin-top: -1em;
-  margin-left: 18rem;
-  font-size: clamp(4rem, 9vw, 7rem);
+  margin-left: 12rem;
+  font-size: clamp(3.5rem, 8vw, 6.2rem);
   text-align: left;
   margin-bottom: 0;
 }
 
 #det-disclaimer {
-  margin-left: 18rem;
-  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  margin-left: 12rem;
+  font-size: clamp(1.7rem, 2.2vw, 2.2rem);
   text-align: left;
 }
 
 #polaroid-grid {
   margin-top: 3em;
-  margin-left: 16rem;
+  margin-left: 10rem;
 }
 
 .polaroid-wrap {
@@ -185,7 +206,7 @@ body {
 }
 
 .polaroid {
-  height: 32rem;
+  height: 20rem;
   z-index: 10;
   margin-bottom: 5em;
   filter: brightness(95%) sepia(10%);
@@ -207,12 +228,12 @@ body {
 
 .polaroid-text {
   position: absolute;
-  top: 71%;
+  top: 67%;
   left: 52%;
   transform: translateX(-50%);
   width: 75%;
 
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   text-align: left;
   font-family: "Courier New";
   font-weight: bold;
@@ -224,10 +245,10 @@ body {
 }
 
 #faq-head {
-  font-size: clamp(5rem, 6vw, 8rem);
+  font-size: clamp(4.4rem, 5.4vw, 7rem);
   text-align: center;
   margin-bottom: 0.1em;
-  margin-top: 0.4em;
+  margin-top: 0;
 }
 
 #faq {
@@ -256,7 +277,7 @@ body {
   background-color: var(--bg);
   border: none;
   color: var(--main);
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.35rem, 1.8vw, 1.8rem);
   font-family: "Phantom Sans", sans-serif;
   padding: 0.7em 0.9em;
   width: 100%;
@@ -272,7 +293,7 @@ body {
 
 .answer {
   color: var(--main);
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(0.95rem, 1.3vw, 1.3rem);
   font-family: "Phantom Sans", sans-serif;
   padding: 0.7em 0.9em 0.2em 0.9em;
   margin-left: -4em;
@@ -285,7 +306,7 @@ body {
 #made-by {
   position: static;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   background-color: var(--bg);
   padding-top: 1.5rem;

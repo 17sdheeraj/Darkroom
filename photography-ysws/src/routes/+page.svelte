@@ -28,6 +28,8 @@
 			"Digicam", "A Digicam, exactly which is tbd"],
 		["https://cdn.hackclub.com/019cf3a4-6360-7cfe-abcc-f1248cd352a7/printed_photps_crop.png",
 			"Printed Photos", "A grant to get your photo printed"],
+		["https://cdn.hackclub.com/019cf3c0-970b-7f23-8cc8-29eb8d212ea1/placeholder.png", 
+			"Placeholder", "Placeholder"]
 		];
 
 	let faqs = [
@@ -71,12 +73,14 @@
 
 <div id="main" class:visible={show}>
 	<div id="hero">
-		<h1 id="title">Darkroom</h1>
+		<div id="hero-copy">
+			<h1 id="title">Darkroom</h1>
 
-		<p id="description">
-			Build something photography related,<br>
-			Get cameras, gear, film and other cool stuff!
-		</p>
+			<p id="description">
+				Build something photography related,<br>
+				Get cameras, gear, film and other cool stuff!
+			</p>
+		</div>
 		
 		<div id="buttons">
 			<a href="https://trulle123.fillout.com/darkroom-rsvp" target="_blank" class="button">RSVP</a>
