@@ -6,7 +6,9 @@
 	let show = $state(false);
 
 	onMount(() => {
-		show = true;
+		requestAnimationFrame(() => {
+			show = true;
+		});
 	});
 
 	let items = [
